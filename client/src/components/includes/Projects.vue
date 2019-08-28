@@ -1,0 +1,178 @@
+<template>
+  <div class="projects">
+    
+    <div class="projects-container">
+      <aside class="left">
+        <div class="project">
+          <a href="#" target="_blank">FileDrop</a>
+        </div>
+        <div class="project">
+          <a href="https://bitbucket.org/matiiss-z/scandiwebapp/src/master/" target="_blank">ScandiWeb</a>
+        </div>
+      </aside>
+      <aside class="right">
+        <div class="project">
+          <a href="https://www.fewclicks.app" target="_blank">FewClicks</a>
+        </div>
+        <div class="project">
+          <a href="https://bitbucket.org/matiiss-z/magebit/src/master/" target="_blank">MageBit</a>
+        </div>
+      </aside>
+      <div class="current">Current Project</div>      
+    </div>
+    <router-link class="about" to="/about">AboutMe</router-link>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Projects'
+}
+</script>
+
+<style lang="scss" scoped>
+.mage-info {
+  display: none;
+}
+
+.projects-container{
+  @include center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 22em;
+  align-items: center;
+  justify-content: center;
+  a {
+    text-decoration: none;
+  }
+
+  .project {
+    display: block;
+    font-size: 1.4em;
+    padding: 1.4em 1.3em;
+    margin: 0.2em 0.1em;
+    width: 70%;
+    height: 1em;
+    background: $main-grey;
+    &:hover {
+      background: $grey-hover;
+    }
+    a {
+      font-size: 1.2em;
+      color: $button-color;
+      font-family: monospace;
+    }
+  }
+
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-basis: 45%;
+  justify-content: space-between;
+  .project{
+    clip-path: polygon(100% 22%, 88% 50%, 100% 79%, 22% 79%, 0 50%, 20% 22%);
+    cursor: pointer;
+  } 
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 45%;
+  .project{
+    clip-path: polygon(79% 22%, 100% 50%, 80% 78%, 0 78%, 12% 50%, 0 22%);
+    cursor: pointer;
+  } 
+}
+.current {
+  margin-top: -1em;
+  color: $button-color;
+  font-family: monospace;
+  cursor: pointer;
+  font-size: 1.6em;
+  font-family: monospace;
+  padding: 2em 1.8em;
+  clip-path: polygon(19% 32%, 81% 32%, 100% 50%, 100% 50%, 81% 68%, 19% 68%, 0 50%, 0 50%);
+  background :$main-grey;
+  
+  &:hover {
+    background: $grey-hover;
+  }
+}
+.about {
+  text-decoration: none;
+  color: $button-color;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 1.8em;
+  font-family: monospace;
+  padding: 1.6em 1.8em;
+  clip-path: polygon(19% 32%, 81% 32%, 100% 50%, 100% 50%, 81% 68%, 19% 68%, 0 50%, 0 50%);
+  background: $main-grey;
+  margin-bottom: -1.1em;
+
+  &:hover {
+    background: $grey-hover;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .projects-container{
+    .project {
+      font-size: 1.2em;
+      padding: 1.2em 1.1em;
+    }
+  }
+  .about {
+    font-size: 1.6em;
+    padding: 1.4em 1.7em;
+  }
+  .current {
+    font-size: 1.4em;
+    padding: 2em 1.8em;
+    margin-bottom: 1.2em;
+  }
+}
+
+@media (max-width: 450px) {
+  .projects-container{
+    .project {
+      font-size: 1.2em;
+      padding: 1em 0.8em;
+    }
+  }
+  .about {
+    font-size: 1.4em;
+    padding: 1.4em 1.5em;
+    margin-bottom: -1.2em;
+    
+  }
+  .current {
+    font-size: 1.3em;
+    padding: 1.8em 1.6em;
+  }
+}
+@media (max-width: 381px) {
+  .projects-container{
+    .project {
+      font-size: 1em;
+      padding: 1em 0.5em;
+    }
+  }
+  .about {
+    font-size: 1.4em;
+    padding: 1.4em 1.5em;
+    margin-bottom: -1.2em;
+    
+  }
+  .current {
+    font-size: 1.3em;
+    padding: 1.8em 1.6em;
+  }
+}
+
+</style>
