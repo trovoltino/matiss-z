@@ -1,32 +1,48 @@
 <template>
   <div class="projects">
-    
+   
     <div class="projects-container">
       <aside class="left">
-        <div class="project">
-          <a href="#" target="_blank">FileDrop</a>
+        <div class="project file-drop">
+          <a href="https://fewclicks-demo.netlify.com" target="_blank" title="this is filedrop app">FileDrop</a>
+          <p class='tooltip-file' >
+            Here are previou for app that uses REST API to communicate with client software and generate report for specific pdf file,
+            and send report data in email template to client.
+          </p>
         </div>
         <div class="project">
-          <a href="https://bitbucket.org/matiiss-z/scandiwebapp/src/master/" target="_blank">ScandiWeb</a>
+          <a href="https://bitbucket.org/matiiss-z/scandiwebapp/src/master/" target="_blank" title="T">ScandiWeb</a>
+          <p class='tooltip-Scandi'>Here are source code for app where backend is written with php,
+            and frontend is jQuerry with vanila js.
+          </p>
         </div>
       </aside>
       <aside class="right">
         <div class="project">
           <a href="https://www.fewclicks.app" target="_blank">FewClicks</a>
+
         </div>
         <div class="project">
           <a href="https://bitbucket.org/matiiss-z/magebit/src/master/" target="_blank">MageBit</a>
         </div>
       </aside>
-      <div class="current">Current Project</div>      
+      <div>
+        <a class="current" href="https://github.com/trovoltino/matiss-z" target="_blank">Current Project</a>
+      </div>      
     </div>
     <router-link class="about" to="/about">AboutMe</router-link>
   </div>
 </template>
 
 <script>
+
 export default {
-  name: 'Projects'
+  name: 'Projects',
+  data() {
+    return {
+      msg: 'this is rela message and you will get it'
+    }
+  }
 }
 </script>
 
@@ -42,6 +58,7 @@ export default {
   width: 22em;
   align-items: center;
   justify-content: center;
+  transform: translate(-50%, -70%);
   a {
     text-decoration: none;
   }
@@ -63,7 +80,17 @@ export default {
       font-family: monospace;
     }
   }
-
+  
+}
+a[title]:hover:after {
+  content: attr(title);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  color: red;
+}
+.tooltip-file {
+  display: none;
 }
 .left {
   display: flex;
@@ -87,16 +114,15 @@ export default {
   } 
 }
 .current {
-  margin-top: -1em;
   color: $button-color;
   font-family: monospace;
   cursor: pointer;
   font-size: 1.6em;
   font-family: monospace;
   padding: 2em 1.8em;
+  
   clip-path: polygon(19% 32%, 81% 32%, 100% 50%, 100% 50%, 81% 68%, 19% 68%, 0 50%, 0 50%);
   background :$main-grey;
-  
   &:hover {
     background: $grey-hover;
   }
@@ -105,7 +131,7 @@ export default {
   text-decoration: none;
   color: $button-color;
   position: absolute;
-  bottom: 10%;
+  bottom: 16%;
   left: 50%;
   transform: translate(-50%);
   font-size: 1.8em;
