@@ -58,7 +58,7 @@ export default {
   width: 22em;
   align-items: center;
   justify-content: center;
-  transform: translate(-50%, -70%);
+  transform: translate(-50%, -66%);
   a {
     text-decoration: none;
   }
@@ -66,8 +66,8 @@ export default {
   .project {
     display: block;
     font-size: 1.4em;
-    padding: 1.4em 1.3em;
-    margin: 0.2em 0.1em;
+    padding: 1.3em 1.3em;
+    margin: 0.1em 0.1em;
     width: 70%;
     height: 1em;
     background: $main-grey;
@@ -120,7 +120,8 @@ a[title]:hover:after {
   font-size: 1.6em;
   font-family: monospace;
   padding: 2em 1.8em;
-  
+  display: block;
+  margin: -10% 0%;
   clip-path: polygon(19% 32%, 81% 32%, 100% 50%, 100% 50%, 81% 68%, 19% 68%, 0 50%, 0 50%);
   background :$main-grey;
   &:hover {
@@ -131,7 +132,7 @@ a[title]:hover:after {
   text-decoration: none;
   color: $button-color;
   position: absolute;
-  bottom: 16%;
+  bottom: 20%;
   left: 50%;
   transform: translate(-50%);
   font-size: 1.8em;
@@ -148,9 +149,10 @@ a[title]:hover:after {
 
 @media only screen and (max-width: 1050px) {
   .projects-container{
+    transform: translate(-50%, -50%);
     .project {
       font-size: 1.2em;
-      padding: 1.2em 1.1em;
+      padding: 1.1em 1.1em;
     }
   }
   .about {
@@ -184,19 +186,20 @@ a[title]:hover:after {
 }
 @media (max-width: 381px) {
   .projects-container{
+   
     .project {
-      font-size: 1em;
+      font-size: 0.9em;
       padding: 1em 0.5em;
     }
   }
   .about {
-    font-size: 1.4em;
+    font-size: 1.2em;
     padding: 1.4em 1.5em;
     margin-bottom: -1.2em;
     
   }
   .current {
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: 1.8em 1.6em;
   }
 }

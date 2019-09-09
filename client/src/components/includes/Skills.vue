@@ -224,9 +224,6 @@ h3 {
     min-height: 300px;
     max-height: 300px;
   }
-  .main-skills {
-    margin-top:20px;
-  }
 }
 
 </style>
