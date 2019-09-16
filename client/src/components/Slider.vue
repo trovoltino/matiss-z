@@ -98,24 +98,24 @@ h2 {
   box-shadow: 0px 0px 13px 0px rgba(158,158,158,0.66);
 }
 .move-right, .move-left {
-    text-align: center;
-    text-transform: uppercase;
-    border:solid 0px rgb(235, 235, 235);
-    font-weight: bold;
-    border-radius: 80px;
-    padding: 18px 0px;
-    min-width: 160px;
-    outline:none;
-    font-size: 14px;
-    color:white;
-    background: $button-color;
-    cursor: pointer;
-    &:hover {
-      background: $button-hover;
-    }
-    &:active {
-      background: $button-active;
-    }
+  text-align: center;
+  text-transform: uppercase;
+  border:solid 0px rgb(235, 235, 235);
+  font-weight: bold;
+  border-radius: 80px;
+  padding: 18px 0px;
+  min-width: 160px;
+  outline:none;
+  font-size: 14px;
+  color:white;
+  background: $button-color;
+  cursor: pointer;
+  &:hover {
+    background: $button-hover;
+  }
+  &:active {
+    background: $button-active;
+  }
 }
 .slide {
   left: 55%;

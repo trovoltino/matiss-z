@@ -11,10 +11,7 @@
           </p>
         </div>
         <div class="project">
-          <a href="https://bitbucket.org/matiiss-z/scandiwebapp/src/master/" target="_blank" title="T">ScandiWeb</a>
-          <p class='tooltip-Scandi'>Here are source code for app where backend is written with php,
-            and frontend is jQuerry with vanila js.
-          </p>
+          <a href="https://printfull-quiz.netlify.com" target="_blank" title="T">Quiz</a>
         </div>
       </aside>
       <aside class="right">
