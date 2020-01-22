@@ -20,7 +20,7 @@
 
         </div>
         <div class="project">
-          <a href="https://bitbucket.org/matiiss-z/magebit/src/master/" target="_blank">MageBit</a>
+          <a href="https://www.adverts.lv/en/send-files" target="_blank">Adverts.lv</a>
         </div>
       </aside>
       <div>
