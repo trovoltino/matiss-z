@@ -127,7 +127,6 @@ h3 {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-  margin: 5px 5px;
   margin-top: -4em;
   &.frontend, .backend{
     margin: 10px;
@@ -206,12 +205,12 @@ h3 {
     margin: 0;
   }
   li {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     list-style-type: none;
   }
   h3 {
-    font-size: 14px;
+    font-size: 16px;
     font-family:Verdana ;
     text-transform: uppercase;
   }
