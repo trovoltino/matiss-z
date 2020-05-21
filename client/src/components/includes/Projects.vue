@@ -4,7 +4,7 @@
     <div class="projects-container">
       <aside class="left">
         <div class="project file-drop">
-          <a href="https://fewclicks-demo.netlify.com" target="_blank" title="this is filedrop app">FileDrop</a>
+          <a href="https://softproof.org/?guid=d7337c2d-8576-4d68-881c-dba3634033c1" target="_blank">Softprof</a>
           <p class='tooltip-file' >
             Here are previou for app that uses REST API to communicate with client software and generate report for specific pdf file,
             and send report data in email template to client.
@@ -16,11 +16,10 @@
       </aside>
       <aside class="right">
         <div class="project">
-          <a href="https://www.fewclicks.app" target="_blank">FewClicks</a>
-
+          <a href="https://www.adverts.lv/en/send-files" target="_blank">Adverts</a>
         </div>
         <div class="project">
-          <a href="https://www.adverts.lv/en/send-files" target="_blank">Adverts.lv</a>
+          <a href="https://www.fewclicks.app" target="_blank">FewClicks</a>
         </div>
       </aside>
       <div>
